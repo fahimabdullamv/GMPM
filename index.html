@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fahim Abdulla | Senior Product Manager, F2P Mobile Games</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fa;--ink:#101a33;--mut:#4a5573;--acc:#2447e0;--acc-t:#e6ebff;--cor:#d4412b;--pan:#fff;--line:#d9deeb;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1424;--ink:#eef1fa;--mut:#a6b0cc;--acc:#8aa0ff;--acc-t:#1c2748;--cor:#ff8a73;--pan:#151d33;--line:#26304c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1424;--ink:#eef1fa;--mut:#a6b0cc;--acc:#8aa0ff;--acc-t:#1c2748;--cor:#ff8a73;--pan:#151d33;--line:#26304c;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Source Serif 4",Georgia,serif}
+h1,h2,h3,.sans{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif}
+a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--cor);outline-offset:2px}
+.w{width:min(1080px,calc(100% - 40px));margin:0 auto}
+header.nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav .w{display:flex;justify-content:space-between;align-items:center;min-height:58px;gap:16px}
+.nav b{font:800 18px "Bricolage Grotesque",sans-serif}
+.nav nav{display:flex;gap:18px;font:500 14px "Bricolage Grotesque",sans-serif;flex-wrap:wrap}
+.nav nav a{color:var(--mut);text-decoration:none}.nav nav a:hover{color:var(--acc)}
+section{padding:72px 0}
+h2{font-size:clamp(30px,4vw,44px);line-height:1.08;margin:0 0 12px;letter-spacing:-.02em;font-weight:800}
+.lede{color:var(--mut);max-width:62ch;margin:0 0 34px}
+.hero{padding:64px 0 56px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+h1{font-size:clamp(42px,6.4vw,78px);line-height:.98;letter-spacing:-.035em;margin:0 0 18px;font-weight:800}
+.pf{display:block;width:140px;height:140px;border-radius:50%;object-fit:cover;object-position:50% 18%;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--acc);margin:0 0 22px}
+.hyp{touch-action:pan-y}.hyp dl{min-height:270px}.pg{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px}.pg button{font:700 14px "Bricolage Grotesque",sans-serif;background:var(--bg);color:var(--ink);border:2px solid var(--ink);border-radius:4px;padding:6px 12px;cursor:pointer}.pg button:hover{background:var(--acc-t)}.pg span{font:600 13px "Bricolage Grotesque",sans-serif;color:var(--mut);text-align:center}.hyp dd{min-height:0}
+.role{font:700 20px "Bricolage Grotesque",sans-serif;margin:0 0 14px}
+.hero p{max-width:56ch;color:var(--mut)}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.btn{font:700 15px "Bricolage Grotesque",sans-serif;padding:12px 20px;border-radius:6px;text-decoration:none;border:2px solid var(--acc)}
+.btn.p{background:var(--acc);color:var(--bg)}
+.hyp{background:var(--pan);border:2px solid var(--ink);border-radius:4px;padding:24px;box-shadow:8px 8px 0 var(--acc)}
+.hyp h3{margin:0 0 4px;font-size:15px;color:var(--cor)}
+.hyp dl{margin:12px 0 0}.hyp dt{font:700 14px "Bricolage Grotesque",sans-serif;color:var(--acc);margin-top:12px}
+.hyp dd{margin:2px 0 0;font-size:15px;line-height:1.5}
+.hyp small{display:block;margin-top:16px;color:var(--mut);font-size:13px;border-top:1px solid var(--line);padding-top:10px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);background:var(--pan)}
+.stats div{padding:20px;border-right:1px solid var(--line)}.stats div:last-child{border:0}
+.stats b{display:block;font:800 34px/1 "Bricolage Grotesque",sans-serif;color:var(--acc)}
+.stats span{font-size:14px;color:var(--mut);line-height:1.4;display:block;margin-top:6px}
+table{width:100%;border-collapse:collapse;background:var(--pan);border:1px solid var(--line);font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:14px 16px;border-bottom:1px solid var(--line)}
+th{font:700 14px "Bricolage Grotesque",sans-serif;background:var(--acc-t)}
+td:first-child{font-weight:600;width:34%}
+.tw{overflow-x:auto}
+.loop{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;list-style:none;padding:0;margin:0}
+.loop li{counter-increment:s;padding:20px;background:var(--pan);border:1px solid var(--line);margin:0 -1px -1px 0;font-size:15px;line-height:1.5}
+.loop li::before{content:counter(s);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--bg);font:700 14px "Bricolage Grotesque",sans-serif;margin-bottom:10px}
+.loop b{display:block;font:700 17px "Bricolage Grotesque",sans-serif}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:var(--pan);border:1px solid var(--line);border-left:5px solid var(--acc);padding:24px}
+.card.c2{border-left-color:var(--cor)}
+.card h3{margin:0 0 8px;font-size:23px;line-height:1.15}
+.card p{margin:8px 0;font-size:15.5px;line-height:1.6}
+.card .k{font:600 14px "Bricolage Grotesque",sans-serif;color:var(--acc);margin-top:12px}
+.note{border-left:4px solid var(--cor);padding:10px 16px;margin-top:22px;background:var(--pan);font-size:14.5px;color:var(--mut)}
+.games{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.g{background:var(--pan);border:1px solid var(--line);padding:18px}
+.g h3{margin:0 0 4px;font-size:20px}.g p{margin:0 0 8px;font-size:14.5px;color:var(--mut);line-height:1.5}
+.lk{margin-top:10px}.th{display:grid;place-items:center;aspect-ratio:16/9;margin:-18px -18px 14px;background:linear-gradient(135deg,var(--acc),var(--ink));text-decoration:none}.th{position:relative;overflow:hidden}.th img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.th span{position:relative;z-index:1;box-shadow:0 2px 10px rgba(0,0,0,.35)}
+.th span{width:50px;height:50px;border-radius:50%;background:var(--bg);color:var(--ink);display:grid;place-items:center;font-size:18px}.lk a{display:inline-block;margin-right:14px;font:600 14px "Bricolage Grotesque",sans-serif}
+.calc{background:var(--pan);border:2px solid var(--ink);padding:26px;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.calc label{display:block;font:600 14px "Bricolage Grotesque",sans-serif;margin-bottom:14px}
+.calc input{width:100%;font:500 16px "Bricolage Grotesque",sans-serif;padding:9px 10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:4px;margin-top:4px}
+.out b{display:block;font:800 44px/1.05 "Bricolage Grotesque",sans-serif;color:var(--acc)}
+.out p{margin:4px 0 14px;color:var(--mut);font-size:15px}
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.tl article{padding:0 0 28px 24px;position:relative}
+.tl article::before{content:"";position:absolute;left:-7px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--acc)}
+.tl h3{margin:0;font-size:22px}.tl .d{font:500 14px "Bricolage Grotesque",sans-serif;color:var(--cor)}
+.tl p{margin:6px 0 0;font-size:15.5px;color:var(--mut)}
+.sk{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sk div{background:var(--pan);border:1px solid var(--line);padding:18px}
+.sk h3{margin:0 0 8px;font-size:18px}.sk p{margin:0;font-size:15px;color:var(--mut);line-height:1.6}
+.contact{background:var(--ink);color:var(--bg);padding:64px 0}
+.contact h2{color:var(--bg)}.contact a{color:var(--bg);font:600 18px "Bricolage Grotesque",sans-serif;display:block;margin:6px 0}
+.contact p{max-width:56ch;opacity:.85}
+footer{padding:20px 0;font-size:13px;color:var(--mut)}
+@media(max-width:860px){.hero,.calc{grid-template-columns:1fr}.stats,.loop{grid-template-columns:1fr 1fr}.cards,.games,.sk{grid-template-columns:1fr}.nav nav{display:none}.stats div:nth-child(2){border-right:0}.stats div{border-bottom:1px solid var(--line)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="w"><b>Fahim Abdulla</b>
+<nav aria-label="Sections"><a href="#method">Method</a><a href="#work">Work</a><a href="#games">Live games</a><a href="#indie">Indie dev</a><a href="#practice">Skills</a><a href="#tool">Test sizing</a><a href="#career">Career</a></nav></div></header>
+
+<main>
+<div class="w hero">
+<div>
+<img class="pf" src="assets/images/FAHIM.png" onerror="this.style.display='none'" alt="Portrait of Fahim Abdulla" width="140" height="140">
+<h1>Fahim Abdulla</h1>
+<p class="role">Senior Product Manager, F2P mobile games: growth, LiveOps and monetisation</p>
+<p>I’ve spent 7 years in mobile games and 5 in product ownership for F2P titles. I start from a player problem, write the hypothesis, define the metric and the guardrail, then work with producers, analysts and engineers to ship what the test supports. Outside work I design, code and build small games solo in Unity and C#.</p>
+<div class="btns"><a class="btn p" href="#work">See my work</a><a class="btn" href="mailto:fahimmv29@gmail.com">Email me</a></div>
+</div>
+<aside class="hyp" aria-label="Example hypothesis card">
+<h3>How I frame every opportunity</h3>
+<dl id="hd" aria-live="polite"></dl>
+<div class="pg"><button id="hp" type="button" aria-label="Previous example">← Prev</button><span id="hc"></span><button id="hn" type="button" aria-label="Next example">Next →</button></div>
+<small>From my independent World War Armies case study. These are hypotheses, not results.</small>
+</aside>
+</div>
+
+<div class="w"><div class="stats">
+<div><b>$1M+</b><span>Revenue Downtown Mafia grew to</span></div>
+<div><b>15K–25K</b><span>Daily active users on Downtown Mafia</span></div>
+<div><b>+15%</b><span>Retention lift from progression and UX work</span></div>
+<div><b>5+ → 2</b><span>Feature pitches leading to two international launches</span></div>
+</div></div>
+
+<section id="method" style="background:var(--acc-t)"><div class="w">
+<h2>My loop for every feature 🔁</h2>
+<p class="lede">Nothing goes on the roadmap without these four steps. The order is the point.</p>
+<ol class="loop">
+<li><b>Size the opportunity</b>Find the biggest gap in retention, engagement, economy or monetisation and estimate what closing it is worth.</li>
+<li><b>Write the hypothesis</b>If we change X, player behaviour Y moves, measured by metric Z, with guardrail G.</li>
+<li><b>Run a clean test</b>Agree the baseline, sample size and duration with analysts before launch. Read results without attachment.</li>
+<li><b>Decide and roadmap</b>Ship, iterate or stop with the producer, and rank what’s next by the value it will create.</li>
+</ol>
+</div></section>
+
+<section id="work"><div class="w">
+<h2>Selected product thinking 🎯</h2>
+<p class="lede">One shipped result from my live-game work, plus three opportunities from my independent case study of a PvP strategy game.</p>
+<div class="cards">
+<article class="card">
+<h3>Downtown Mafia: growing a live RPG</h3>
+<p>Contributed to growth that took the game past $1M in revenue with 15K–25K daily active users. My work covered progression, daily and weekly challenge systems, events and offers, and tuning them against KPIs.</p>
+<p>I applied A/B testing and KPI analysis to judge feature performance before expanding it.</p>
+<div class="k">Focus: retention, ARPDAU, LiveOps cadence</div>
+</article>
+<article class="card c2">
+<h3>Make matchmaking wait time useful</h3>
+<p>Hypothesis: a rotating “know your army” panel during the queue lowers cancellations and improves unit understanding.</p>
+<div class="k">Primary: abandonment. Guardrail: actual wait time.</div>
+</article>
+<article class="card c2">
+<h3>Turn a defeat into the next decision</h3>
+<p>Hypothesis: a one-tap rematch, a strike list and moderated quick messages convert a frustrating moment into another battle.</p>
+<div class="k">KPIs: rematch completion, battles per session, session length</div>
+</article>
+<article class="card c2">
+<h3>Seasonal LiveOps with a full player path</h3>
+<p>Hypothesis: a themed takeover from lobby banner to store, countdown and final-hours reminder lifts conversion without causing offer fatigue.</p>
+<div class="k">KPIs: CTR, payer conversion, revenue per exposed user, ARPDAU</div>
+</article>
+</div>
+<p class="note"><b>Research note:</b> the World War Armies study is independent and outside-in, built on hands-on play and public data. Its ideas are hypotheses that need internal telemetry and cohort analysis before they ship.</p>
+</div></section>
+
+<section id="games" style="background:var(--acc-t)"><div class="w">
+<h2>Games I’ve worked on 🎮</h2>
+<p class="lede">Live titles across RPG, casino, merge and puzzle, which is the genre mix a hybrid portfolio needs.</p>
+<div class="games">
+<div class="g"><h3>Tiny Legends</h3><p>Merge and hero RPG. Progression, rewards and events.</p><a href="https://play.google.com/store/apps/details?id=com.dn.games.mergewars.tinylegends" target="_blank" rel="noopener noreferrer">Google Play</a></div>
+<div class="g"><h3>Downtown Mafia</h3><p>Long-running RPG. Systems, LiveOps and growth.</p><a href="https://play.google.com/store/apps/details?id=com.dn.games.dtmafia" target="_blank" rel="noopener noreferrer">Google Play</a></div>
+<div class="g"><h3>Poker Legends</h3><p>Texas Hold’em with side features and LiveOps updates.</p><a href="https://play.dtcpoker.mobi/" target="_blank" rel="noopener noreferrer">Play online</a></div>
+<div class="g"><h3>Tile Hike: Triple Match</h3><p>Triple-match puzzle. Product ownership for a puzzle title.</p><a href="https://play.google.com/store/apps/details?id=com.jellycomet.games.tilematchexplorer" target="_blank" rel="noopener noreferrer">Google Play</a></div>
+<div class="g"><h3>Brain King</h3><p>Puzzle game. I led Unity development through release.</p><a href="https://brain-king-tricky-puzzle-games.updatestar.com/" target="_blank" rel="noopener noreferrer">View listing</a></div>
+<div class="g"><h3>Run Survive Run: Escape Quest</h3><p>Unity development, bug fixing and release for a mobile title.</p><a href="https://run-baby-run-movie-game.updatestar.com/" target="_blank" rel="noopener noreferrer">View listing</a></div>
+</div>
+</div></section>
+
+<section id="indie"><div class="w">
+<h2>Solo indie developer 🕹️</h2>
+<p class="lede">Outside my day job I design, code and build small puzzle games on my own in Unity and C#. They let me test difficulty, rewards and feel quickly, and ship playable builds end to end.</p>
+<div class="games">
+<div class="g"><a class="th" href="https://drive.google.com/file/d/1LxFRX6UjAKuBsAnfQPKBoWvYKyqr2jtb/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Download the Fruit Sort Android APK"><img src="assets/images/fruit-sort.png" alt="Fruit Sort screenshot" loading="lazy" onerror="this.style.display='none'"></a><h3>Fruit Sort</h3><p>Sorting puzzle, solo-built.</p><div class="lk"><a href="https://drive.google.com/file/d/1LxFRX6UjAKuBsAnfQPKBoWvYKyqr2jtb/view?usp=sharing" target="_blank" rel="noopener noreferrer">APK (Android)</a></div></div>
+<div class="g"><a class="th" href="https://youtu.be/5ZOV9eMAIiw" target="_blank" rel="noopener noreferrer" aria-label="Watch Match It gameplay on YouTube"><img src="https://img.youtube.com/vi/5ZOV9eMAIiw/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span>▶</span></a><h3>Match It</h3><p>Puzzle game, solo-built in Unity and C#.</p><div class="lk"><a href="https://youtu.be/5ZOV9eMAIiw" target="_blank" rel="noopener noreferrer">Watch</a><a href="https://drive.google.com/file/d/1KPeoVnRybkR0vPvd04VP_58lHqBkC5Dk/view" target="_blank" rel="noopener noreferrer">APK (Android)</a><a href="https://drive.google.com/file/d/1NYCFcfjDoMjIK5CmKuWdfjHyaUBnychs/view" target="_blank" rel="noopener noreferrer">Build (Mac)</a></div></div>
+<div class="g"><a class="th" href="https://youtu.be/BeYvWcEiAHw" target="_blank" rel="noopener noreferrer" aria-label="Watch Loop It gameplay on YouTube"><img src="https://img.youtube.com/vi/BeYvWcEiAHw/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'"><span>▶</span></a><h3>Loop It</h3><p>Puzzle game, solo-built in Unity and C#.</p><div class="lk"><a href="https://youtu.be/BeYvWcEiAHw" target="_blank" rel="noopener noreferrer">Watch</a><a href="https://drive.google.com/file/d/1ODUhzrkIJayo3nw_4PYVG3jW4Np74Waa/view" target="_blank" rel="noopener noreferrer">APK (Android)</a><a href="https://drive.google.com/file/d/1mQyOcUOZ8BANC9ZXKUv1lUKBcM6J44Bu/view" target="_blank" rel="noopener noreferrer">Build (Mac)</a></div></div>
+</div>
+</div></section>
+
+<section id="tool" style="background:var(--acc-t)"><div class="w">
+<h2>Size a test before you run it</h2>
+<p class="lede">A quick two-arm sample size estimate (95% confidence, 80% power) for a retention or conversion metric. I use it to check whether a test is worth running at current traffic.</p>
+<div class="calc">
+<div>
+<label>Baseline rate (%), for example Day-1 retention<input id="p" type="number" value="40" min="1" max="99" step="0.5"></label>
+<label>Relative lift you want to detect (%)<input id="l" type="number" value="5" min="0.5" max="100" step="0.5"></label>
+<label>New users per day entering the test<input id="d" type="number" value="2000" min="1" step="100"></label>
+</div>
+<div class="out" aria-live="polite">
+<b id="n">–</b><p>users needed in each variant</p>
+<b id="t">–</b><p>days to finish at your traffic, with a 50/50 split</p>
+<p style="font-size:13px">Approximation: n ≈ 16·p(1−p)/δ². Confirm with your analysts before launch.</p>
+</div>
+</div>
+</div></section>
+
+<section id="career"><div class="w">
+<h2>Career</h2>
+<div class="tl">
+<article><span class="d">Mar 2025 to now</span><h3>Senior Product Owner, DynamicNext Technologies</h3><p>Own game roadmaps, prioritised by player value, revenue potential and business impact. Analyse KPIs for retention, engagement and monetisation opportunities, design and read A/B tests, and align teams on experiment outcomes.</p></article>
+<article><span class="d">Feb 2022 to Feb 2025</span><h3>Product Owner, DynamicNext Technologies</h3><p>Turned player needs and business goals into requirements and success metrics, prioritised backlogs by impact, effort and value, and supported A/B testing across Tiny Legends, Poker Legends, Downtown Mafia and Tile Hike.</p></article>
+<article><span class="d">Jan 2020 to Jan 2022</span><h3>Development Lead, Webros Media</h3><p>Led Unity game development and releases for Brain King and Run Survive Run, with sprint planning, estimation and player-feedback fixes.</p></article>
+<article><span class="d">Apr to Aug 2019</span><h3>Unity Developer, Avidia Labs</h3><p>Built Unity and C# interactive modules, UI and performance work.</p></article>
+</div>
+</div></section>
+
+<section id="practice" style="background:var(--acc-t)"><div class="w">
+<h2>How I analyse and design</h2>
+<p class="lede">The four skills I use most when turning player behaviour into product decisions.</p>
+<div class="cards">
+<div class="g"><h3>📈 Data analysis</h3><p>Cohorts, funnels and KPIs: DAU, retention, ARPDAU and LTV. I query with SQL and read dashboards in Firebase Analytics, Grafana, Power BI and Tableau to find the biggest gaps in retention, engagement and monetisation. I also deconstruct top hybrid-casual games to learn what drives their retention.</p></div>
+<div class="g"><h3>🗺️ User journey analysis</h3><p>I map the full player path from install through first-time experience, deep engagement and first purchase, then find where players drop off. My onboarding flows reduced early drop-off in new installs.</p></div>
+<div class="g"><h3>🧪 A/B test setup</h3><p>Hypothesis, primary metric, guardrail, baseline, sample size and run length are agreed before launch, then results are read with the producer and analysts. Try the <a href="#tool">sizing tool</a> above.</p></div>
+<div class="g"><h3>📐 Wireframes</h3><p>Low-fidelity wireframes in Figma to align stakeholders fast: casino and idle RPG game flows, login and chest-reward screens, plus a food delivery app, a survey insights dashboard and a music app.</p></div>
+</div>
+</div></section>
+
+<section><div class="w">
+<h2>Skills and education</h2>
+<div class="sk">
+<div><h3>Product and growth</h3><p>Roadmap planning, backlog prioritisation, hypothesis-driven experimentation, LiveOps and growth, monetisation optimisation, risk and dependency management.</p></div>
+<div><h3>Analytics and tools</h3><p>SQL, Firebase Analytics, Grafana, Power BI, Tableau, Jira, Redmine, Unity and C#.</p></div>
+<div><h3>Education</h3><p>Certified Associate in Project Management (2022). PG Diploma in Game Development, ICAT Design and Media College (2017–18). B.Sc Physics, Kannur University. English, Hindi, Malayalam, Kannada.</p></div>
+</div>
+</div></section>
+</main>
+
+<div class="contact"><div class="w">
+<h2>Let’s talk about your live games 👋</h2>
+<p>I’d like to bring a clear hypothesis, a clean test and a roadmap ranked by value to Kwalee’s Product and Growth team.</p>
+<a href="mailto:fahimmv29@gmail.com">fahimmv29@gmail.com</a>
+<a href="tel:+919961106993">+91 99611 06993</a>
+<a href="https://www.linkedin.com/in/fahim-abdulla-mv-33135b166/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+</div></div>
+<footer><div class="w">Fahim Abdulla, Senior Product Manager portfolio</div></footer>
+
+<script>
+(function(){
+var p=document.getElementById('p'),l=document.getElementById('l'),d=document.getElementById('d'),n=document.getElementById('n'),t=document.getElementById('t');
+function f(x){return Math.round(x).toLocaleString('en-US')}
+function u(){
+var a=parseFloat(p.value)/100,r=parseFloat(l.value)/100,dd=parseFloat(d.value);
+if(!(a>0&&a<1&&r>0&&dd>0)){n.textContent='–';t.textContent='–';return}
+var delta=a*r,N=16*a*(1-a)/(delta*delta);
+n.textContent=f(N);
+t.textContent=Math.max(1,Math.ceil(2*N/dd))+' days';
+}
+[p,l,d].forEach(function(e){e.addEventListener('input',u)});u();
+})();
+(function(){
+var S=[
+{t:'Seasonal LiveOps',o:'Event messaging reaches players through scattered touchpoints.',h:'If a themed takeover guides players from lobby banner to store, countdown and final-hours reminder, participation and payer conversion rise.',m:'CTR, payer conversion, revenue per exposed user, ARPDAU',g:'Offer fatigue and retention must not worsen',w:'Cut touchpoints, test a single offer, find where players drop off the path.'},
+{t:'Matchmaking wait',o:'Players wait in matchmaking and some cancel.',h:'If the wait shows useful unit and tactics tips, abandonment drops and players understand their army better.',m:'Matchmaking abandonment rate',g:'Actual wait time must not rise',w:'Drop the tips, review qualitative feedback, test a shorter queue.'},
+{t:'Post-defeat rematch',o:'A defeat is an emotional moment where players may simply leave.',h:'If a one-tap rematch, a strike list and moderated quick messages follow a defeat, more players start another battle.',m:'Rematch completion and battles per session',g:'Session length and moderation complaints must not worsen',w:'Simplify to rematch only and ask players what they want after a loss.'},
+{t:'Store listing',o:'Store screenshots show gameplay but do not say what the player will feel.',h:'If captions lead with the player fantasy, such as Command Your Army, more store visitors install.',m:'Store listing conversion rate',g:'Day-1 retention of new installs must hold',w:'Revert the captions and test one change at a time.'},
+{t:'External benchmarks',o:'Third-party data estimates competitor downloads and revenue.',h:'These estimates are signals to investigate, not conclusions. Internal cohorts will show the real gaps.',m:'Conversion, LTV, retention and LiveOps participation by cohort',g:'Never treat external estimates as equal to internal telemetry',w:'Question the data source and widen the benchmark set.'}];
+var i=0,dl=document.getElementById('hd'),c=document.getElementById('hc');
+function r(){var s=S[i];dl.textContent='';
+[['Observation',s.o],['Hypothesis',s.h],['Primary metric',s.m],['Guardrail',s.g],['If we’re wrong',s.w]].forEach(function(x){var a=document.createElement('dt'),b=document.createElement('dd');a.textContent=x[0];b.textContent=x[1];dl.appendChild(a);dl.appendChild(b)});
+c.textContent=s.t+' · '+(i+1)+' / '+S.length}
+document.getElementById('hp').addEventListener('click',function(){i=(i+S.length-1)%S.length;r()});
+document.getElementById('hn').addEventListener('click',function(){i=(i+1)%S.length;r()});
+var bx=document.querySelector('.hyp'),x0=null,y0=0;
+bx.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+bx.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;x0=null;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)){i=(i+(dx<0?1:S.length-1))%S.length;r()}});
+r();
+})();
+</script>
+</body>
+</html>
